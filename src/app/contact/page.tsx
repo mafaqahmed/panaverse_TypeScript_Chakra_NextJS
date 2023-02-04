@@ -38,7 +38,7 @@ export default function Contact() {
               letterSpacing="1px"
               color="black"
             >
-              We'd love to hear from you
+              We would love to hear from you
             </Center>
             <Center
               as="p"
@@ -158,7 +158,7 @@ export default function Contact() {
               textAlign="center"
               letterSpacing="1px"
             >
-              We'd love to hear from you. Please fill out this form.
+              We would love to hear from you. Please fill out this form.
             </Center>
           </Box>
           <Box width={{base:'75%', lg:'50%'}} mx='auto'>

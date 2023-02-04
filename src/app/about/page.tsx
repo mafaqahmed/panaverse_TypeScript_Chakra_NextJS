@@ -64,7 +64,7 @@ export default function About() {
           <Text textAlign="center" fontWeight="medium" color="gray.600">
             In this brand-new type of curriculum, students will learn how to
             make money and boost exports in the classroom and will begin doing
-            so within six months of the program's beginning. It resembles a
+            so within six months of the programs beginning. It resembles a
             cross between a corporate venture and an educational project.
           </Text>
         </VStack>
@@ -149,8 +149,8 @@ export default function About() {
               expanding software exports.
             </Text>
             <List fontSize="13px" color="blue.600" spacing={3} mt='8px'>
-              {outcomes.map((item) => (
-                <ListItem _hover={{textDecoration:'underline'}}>
+              {outcomes.map((item, index) => (
+                <ListItem _hover={{textDecoration:'underline'}} key={index}>
                   <Link href={item.link}>
                     <HStack>
                       <Box as="p">{item.title}</Box>

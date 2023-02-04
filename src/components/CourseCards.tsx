@@ -80,12 +80,13 @@ export default function CourseCard() {
         }}
         gap="15px"
       >
-        {courses.map((course) => (
+        {courses.map((course, index) => (
           <Card
             maxW="sm"
             _hover={{ transform: "scale(1.02)" }}
             transitionDuration="0.15s"
             transition="ease-in-out"
+            key={index}
           >
               <CardBody>
               <Link href={course.href}>

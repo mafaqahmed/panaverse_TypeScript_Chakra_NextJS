@@ -16,7 +16,7 @@ export default function Features() {
           fontFamily="verdana"
           mb={{ base: "30px", lg: "50px" }}
         >
-          What's included?
+          What is included?
         </Box>
         <Flex
           alignContent="center"

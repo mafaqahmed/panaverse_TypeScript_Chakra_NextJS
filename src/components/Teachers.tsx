@@ -85,10 +85,11 @@ export default function Teachers() {
             width="100%"
             flexWrap="wrap"
           >
-            {teachers.map((teacher) => (
+            {teachers.map((teacher, index) => (
               <VStack
                 align="center"
                 mt={{ base: "12px", md: "30px", lg: "70px" }}
+                key={index}
               >
                 <Box
                   borderRadius="50%"

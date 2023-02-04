@@ -54,8 +54,8 @@ export default function Header() {
                 direction={"row"}
                 style={{ listStyleType: "none" }}
               >
-                {["Home", "About", "Courses", "FAQs", "Blog"].map((item) => (
-                  <Link href={`/${item==='Home' ? '' : item.toLowerCase()}`}>
+                {["Home", "About", "Courses", "FAQs", "Blog"].map((item, index) => (
+                  <Link href={`/${item==='Home' ? '' : item.toLowerCase()}`} key={index}>
                   <Button
                     as="li"
                     px={"25px"}
@@ -108,7 +108,7 @@ const MobileNav = () => {
     <>
       <Box as="div" position='absolute' bgColor='white' width='100%'>
         <VStack as="ul" style={{ listStyleType: "none" }}>
-          {["Home", "About", "Web3.0", "Techers", "Blog", "Contact"].map((item) => (
+          {["Home", "About", "Web3.0", "Techers", "Blog", "Contact"].map((item, index) => (
             <Button
               as="li"
               py="7px"
@@ -117,6 +117,7 @@ const MobileNav = () => {
               cursor="pointer"
               _active={{ color: "#F76400" }}
               variant="ghost"
+              key={index}
             >
               {item}
             </Button>
