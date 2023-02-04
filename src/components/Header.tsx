@@ -39,12 +39,14 @@ export default function Header() {
       >
         <Flex as="nav" maxW={"6xl"} mx="auto" align={"center"} px="20px">
           <Box as="div" py={"10px"}>
+            <Link href='/'>
             <Image
               src="https://www.panaverse.co/red-p-logo-text_dao_croped.png"
               alt="Logo"
               width={100}
               height={50}
             />
+            </Link>
           </Box>
           <Spacer />
           {isDesktop ? (

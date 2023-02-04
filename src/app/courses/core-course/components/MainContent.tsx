@@ -13,8 +13,8 @@ export default function MainContent() {
   const [quarter, setQuarter] = useState("1");
   return (
     <>
-      <Flex direction="column" justifyContent="left" ml="30px" mt="30px">
-        <Text color="orange.900" fontWeight="bold" fontSize="20px">
+      <Flex direction="column" justifyContent="left" ml={{base: '0px', lg:"30px"}} mt={{base: '-100px', lg:"30px"}}>
+        <Text color="orange.900" fontWeight="bold" fontSize="20px" mb={{base:'25px'}}>
           Course Description
         </Text>
         <Text color="gray.600">
@@ -25,8 +25,8 @@ export default function MainContent() {
           the users.
         </Text>
         <HStack
-          mt="30px"
-          fontSize="20px"
+          mt={{base: '40px', lg:"30px"}}
+          fontSize={{base: '13px', lg:"20px"}}
           color="orange.600"
           fontWeight="bold"
           divider={<StackDivider borderColor="gray.400" />}

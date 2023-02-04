@@ -24,13 +24,13 @@ export default function Quarter1() {
   return (
     <>
       <Box mt="30px">
-        <Text textAlign="center" fontWeight="bold" fontSize="30px">
+        <Text textAlign="center" fontWeight="bold" fontSize={{base: '25px', lg:"30px"}}>
           Quarter I (Core)
         </Text>
         <Text
           textAlign="center"
           fontWeight="bold"
-          fontSize="20px"
+          fontSize={{base: '15px', lg:"20px"}}
           color="orange.600"
         >
           CS-101: Object-Oriented Programming using TypeScript
@@ -38,7 +38,7 @@ export default function Quarter1() {
         <Text
           textAlign="center"
           fontWeight="bold"
-          fontSize="20px"
+          fontSize={{base: '15px', lg:"20px"}}
           color="orange.600"
         >
           Duration: 13 Weeks
@@ -51,7 +51,7 @@ export default function Quarter1() {
                   as="span"
                   flex="1"
                   textAlign="left"
-                  fontSize="18px"
+                  fontSize={{base: '15px', lg:"18px"}}
                   fontWeight="bold"
                   letterSpacing="1px"
                   p="7px"
@@ -90,7 +90,7 @@ export default function Quarter1() {
                   as="span"
                   flex="1"
                   textAlign="left"
-                  fontSize="18px"
+                  fontSize={{base: '15px', lg:"18px"}}
                   fontWeight="bold"
                   letterSpacing="1px"
                   p="7px"
@@ -142,7 +142,7 @@ export default function Quarter1() {
                   as="span"
                   flex="1"
                   textAlign="left"
-                  fontSize="18px"
+                  fontSize={{base: '15px', lg:"18px"}}
                   fontWeight="bold"
                   letterSpacing="1px"
                   p="7px"
@@ -194,7 +194,7 @@ export default function Quarter1() {
                   as="span"
                   flex="1"
                   textAlign="left"
-                  fontSize="18px"
+                  fontSize={{base: '15px', lg:"18px"}}
                   fontWeight="bold"
                   letterSpacing="1px"
                   p="7px"
@@ -241,7 +241,7 @@ export default function Quarter1() {
               >
                 <CgWebsite fontSize="22px" />
                 <Link href="https://www.learningtypescript.com/">
-                  Projects and articles for Learning TypeScript
+                  Projects and articles for TypeScript
                 </Link>
               </HStack>
               <HStack fontSize="15px" gap="12px" px="10px" py="8px">
@@ -259,7 +259,7 @@ export default function Quarter1() {
                   as="span"
                   flex="1"
                   textAlign="left"
-                  fontSize="18px"
+                  fontSize={{base: '15px', lg:"18px"}}
                   fontWeight="bold"
                   letterSpacing="1px"
                   p="7px"
