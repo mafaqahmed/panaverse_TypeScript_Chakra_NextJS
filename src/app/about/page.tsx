@@ -42,7 +42,7 @@ export default function About() {
         fontFamily="verdana"
         mt={{ base: "100px", lg: "150px" }}
       >
-        <Box py={{base:'70px', lg:'100px'}}>
+        <Box py={{base:'10px', lg:'100px'}}>
         <VStack maxW={"4xl"} mx="auto" align={"center"} px="30px">
           <Text
             fontSize={{ base: "30px", lg: "40px" }}
@@ -81,7 +81,7 @@ export default function About() {
         >
           <Box width={{ lg: "50%" }} mr={{ base: "0", lg: "100px" }} mb={{ base: "0", lg: "100px" }}>
             <Text
-              fontSize={{ base: "30px", lg: "35px" }}
+              fontSize={{ base: "25px", lg: "35px" }}
               mb={{ base: "20px", lg: "35px" }}
               textAlign="left"
               fontWeight="bold"
@@ -110,7 +110,7 @@ export default function About() {
               </Button>
             </HStack>
           </Box>
-          <Box width={{base:'400px', sm: "500px" }}>
+          <Box width={{base:'100%', md: "500px" }}>
             <Image src="/courseStructure.svg" alt="" width="500" height="500" />
           </Box>
         </Flex>
