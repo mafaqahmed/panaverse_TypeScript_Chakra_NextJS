@@ -85,7 +85,7 @@ export default function FaqList() {
               <>
                 <h2>
                   <AccordionButton _expanded={{ color: "#F6AD55" }} mb='10px'>
-                    <Box as="span" flex="1" textAlign="left" fontWeight="bold" fontSize={{base: '12px', lg:'18px'}} py='25px'>
+                    <Box as="span" flex="1" textAlign="left" fontWeight="bold" fontSize={{base: '14px', lg:'20px'}} py='25px'>
                       {item.question}
                     </Box>
                     {isExpanded ? (
@@ -95,7 +95,7 @@ export default function FaqList() {
                     )}
                   </AccordionButton>
                 </h2>
-                <AccordionPanel pb={4}>{item.answer}</AccordionPanel>
+                <AccordionPanel pb={4} fontSize={{base: '12px', lg:'18px'}}>{item.answer}</AccordionPanel>
               </>
             )}
           </AccordionItem>
