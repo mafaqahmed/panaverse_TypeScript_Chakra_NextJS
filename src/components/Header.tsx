@@ -116,7 +116,7 @@ const MobileNav = (onToggle:toggling) => {
     <>
       <Box as="div" position='absolute' bgColor='white' width='100%'>
         <VStack as="ul" style={{ listStyleType: "none" }} divider={<StackDivider borderColor='gray.400' />}>
-          {["Home", "About", "Courses", "Techers", "Blog", "Contact"].map((item, index) => (
+          {["Home", "About", "Courses", "FAQs", "Blog", "Contact"].map((item, index) => (
             <Link href={`/${item==='Home' ? '' : item.toLowerCase()}`} key={index}>
             <Button
               as="li"
