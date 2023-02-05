@@ -1,20 +1,16 @@
 import {
-  Box,
-  Button,
-  ButtonGroup,
   Card,
   CardBody,
   CardFooter,
   Divider,
-  Flex,
   Grid,
   Heading,
   HStack,
   Image,
-  Link,
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import { BsPeople } from "react-icons/bs";
 import { IoMdTime } from "react-icons/io";
