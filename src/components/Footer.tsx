@@ -55,7 +55,7 @@ export default function Footer() {
           mt="90px"
           maxW={"6xl"} mx="auto" px="20px"
         >
-          <Box as="div" px="50px" bgColor="orange.300" py={{base:'35px', lg:'50px'}}>
+          <Box as="div" px="50px" bgColor="orange.300" py={{base:'30px', lg:'50px'}}>
             <Box>
               <Center
                 as="p"
@@ -85,9 +85,10 @@ export default function Footer() {
                       placeholder="Type your email"
                       _placeholder={{ color: "#AEAEAE" }}
                       bgColor="white"
+                      fontSize='13px'
                     />
                   </FormControl>
-                  <Button type="submit" colorScheme="blackAlpha">
+                  <Button type="submit" colorScheme="blackAlpha" fontSize='13px'>
                     Subscribe
                   </Button>
                 </Flex>

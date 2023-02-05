@@ -3,8 +3,8 @@ import { Box, Button, Flex, HStack, List, ListIcon, ListItem, Text, UnorderedLis
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoMdCheckmarkCircle } from "react-icons/io";
+// import { FaExternalLinkAlt } from "react-icons/fa";
+// import { IoMdCheckmarkCircle } from "react-icons/io";
 
 interface outcome {
   title: string;
@@ -153,8 +153,7 @@ export default function About() {
                 <ListItem _hover={{textDecoration:'underline'}} key={index}>
                   <Link href={item.link}>
                     <HStack>
-                      <Box as="p">{item.title}</Box>
-                      <FaExternalLinkAlt />
+                      <Text>{item.title}</Text>
                     </HStack>
                   </Link>
                 </ListItem>

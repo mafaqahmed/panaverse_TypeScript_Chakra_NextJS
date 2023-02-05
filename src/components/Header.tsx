@@ -7,6 +7,7 @@ import {
   IconButton,
   Spacer,
   Stack,
+  StackDivider,
   useBreakpointValue,
   useDisclosure,
   VStack,
@@ -16,6 +17,10 @@ import Image from "next/image";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+
+interface toggling {
+  onToggle: () => void
+}
 
 export default function Header() {
   const location = usePathname();
@@ -99,18 +104,20 @@ export default function Header() {
             />
           )}
         </Flex>
-        {(isOpen && !isDesktop) && <MobileNav />}
+        {(isOpen && !isDesktop) && <MobileNav  onToggle={onToggle}/>}
       </Box>
     </>
   );
 }
 
-const MobileNav = () => {
+
+const MobileNav = (onToggle:toggling) => {
   return (
     <>
       <Box as="div" position='absolute' bgColor='white' width='100%'>
-        <VStack as="ul" style={{ listStyleType: "none" }}>
-          {["Home", "About", "Web3.0", "Techers", "Blog", "Contact"].map((item, index) => (
+        <VStack as="ul" style={{ listStyleType: "none" }} divider={<StackDivider borderColor='gray.400' />}>
+          {["Home", "About", "Courses", "Techers", "Blog", "Contact"].map((item, index) => (
+            <Link href={`/${item==='Home' ? '' : item.toLowerCase()}`} key={index}>
             <Button
               as="li"
               py="7px"
@@ -119,10 +126,11 @@ const MobileNav = () => {
               cursor="pointer"
               _active={{ color: "#F76400" }}
               variant="ghost"
-              key={index}
+              onClick={onToggle.onToggle}
             >
               {item}
             </Button>
+            </Link>
           ))}
         </VStack>
       </Box>

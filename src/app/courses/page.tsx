@@ -10,7 +10,7 @@ export default function Courses() {
         <Box py={{ base: "70px", lg: "100px" }}>
           <VStack  align={"center"}>
             <Text
-              fontSize={{ base: "30px", lg: "40px" }}
+              fontSize={{ base: "25px", lg: "40px" }}
               textAlign="center"
               fontWeight="extrabold"
               color="black"
@@ -18,7 +18,7 @@ export default function Courses() {
               Certified Web 3.0 and Metaverse Developer
             </Text>
             <Text
-              fontSize={{ base: "20px", lg: "25px" }}
+              fontSize={{ base: "17px", lg: "25px" }}
               textAlign="center"
               fontWeight="bold"
               color="orange.900"
@@ -26,7 +26,7 @@ export default function Courses() {
               Program to Get Ready for the Next Generation of the Internet
             </Text>
             <Text
-              fontSize={{ base: "15px", lg: "20px" }}
+              fontSize={{ base: "12px", lg: "20px" }}
               textAlign="center"
               fontWeight="bold"
               color="orange.7800"
