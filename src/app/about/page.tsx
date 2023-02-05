@@ -130,7 +130,7 @@ export default function About() {
           </Box>
           <Box width={{ lg: "50%" }}>
             <Text
-              fontSize={{ base: "30px", lg: "35px" }}
+              fontSize={{ base: "25px", lg: "35px" }}
               mb={{ base: "20px", lg: "35px" }}
               textAlign="left"
               fontWeight="bold"
